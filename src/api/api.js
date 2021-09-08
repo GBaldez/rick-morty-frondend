@@ -1,14 +1,14 @@
 export const Api = {
 	baseUrl: "https://ricky-morty-backend.herokuapp.com/",
+//configurar as rotas de acordo com os nomes que eu colocar no back
+	createUrl: () => Api.baseUrl + "/personagens/create",
 
-	createUrl: () => Api.baseUrl + "/",
+	readAllUrl: () => Api.baseUrl + "/personagens/read-all",
+	readSingleUrl: (id) => Api.baseUrl + "/personagens/read-by-id/" + id,
 
-	readAllUrl: () => Api.baseUrl + "/",
-	readSingleUrl: (id) => Api.baseUrl + "/" + id,
+	updateUrl: (id) => Api.baseUrl + "/personagens/update" + id,
 
-	updateUrl: (id) => Api.baseUrl + "/" + id,
-
-	deleteUrl: (id) => Api.baseUrl + "/" + id,
+	deleteUrl: (id) => Api.baseUrl + "/personagens/delete" + id,
 	deleteAllUrl: () => Api.baseUrl + "/",
 
 	// Create
